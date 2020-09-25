@@ -15,18 +15,34 @@ namespace EF.First.Project.DAL.Models
         public int IdSpeciality { get; set; }
         public Trainers Trainers { get; set; }
         public Speciality Speciality { get; set; }
+        public ICollection<Students> Students { get; set; }
+        public Group()
+        {
+            Students = new List<Students>();
+        }
+
     }
     public class Trainers
     {
         public int TrainerId { get; set; }
         public string Name { get; set; }
         public int ExpWorkInYears { get; set; }
+        public ICollection<Group> Groups { get; set; }
+        public Trainers ()
+        {
+            Groups = new List<Group>();
+        }
     }
     public class Speciality
     {
         public int IdSpeciality { get; set; }
         public string NameSpeciality { get; set; }
         public int TimeForStudyInMonth { get; set; }
+        public ICollection<Group> Groups { get; set; }
+        public Speciality()
+        {
+            Groups = new List<Group>();
+        }
     }
     public class Audience
     {
