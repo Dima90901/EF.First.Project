@@ -52,7 +52,11 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Contex\Model1.cs" />
+    <Compile Include="Models\Audience.cs" />
     <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\Speciality.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Trainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EF.First.Project.BLL.Services
 {
-    public class FirstBLLService : IDisposable
+    public class BLLService : IDisposable
     {
         private readonly Model1 db = new Model1();
         public IEnumerable<Group> GetAllCars()
@@ -19,7 +19,7 @@ namespace EF.First.Project.BLL.Services
         {
             Group cars = new Group
             {
-                GroupId = 1,
+                Id = 1,
                 GroupName = "Bently"
             };
             db.MyFirstCars.Add(cars);

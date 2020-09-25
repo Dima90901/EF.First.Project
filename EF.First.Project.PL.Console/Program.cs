@@ -11,12 +11,12 @@ namespace EF.First.Project.PL.Console
     {
         static void Main(string[] args)
         {
-            FirstBLLService db = new FirstBLLService();
+            BLLService db = new BLLService();
             db.AddCars();
             var cars = db.GetAllCars();
             foreach (var item in cars)
             {
-                System.Console.WriteLine(item.GroupId + " - " + item.GroupName);
+                System.Console.WriteLine(item.Id + " - " + item.GroupName);
             }
             System.Console.ReadKey();
         }
