@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Contex\Model1.cs" />
-    <Compile Include="Models\MyFirsModelCars.cs" />
+    <Compile Include="Models\Group.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace EF.First.Project.BLL.Services
 {
-    public class FirstBLLServiceCars : IDisposable
+    public class FirstBLLService : IDisposable
     {
         private readonly Model1 db = new Model1();
-        public IEnumerable<MyFirsModelCars> GetAllCars()
+        public IEnumerable<Group> GetAllCars()
         {
             return db.MyFirstCars;
         }
         public void AddCars ()
         {
-            MyFirsModelCars cars = new MyFirsModelCars
+            Group cars = new Group
             {
-                Id = 1,
-                Name = "Bently"
+                GroupId = 1,
+                GroupName = "Bently"
             };
             db.MyFirstCars.Add(cars);
             db.SaveChanges();
