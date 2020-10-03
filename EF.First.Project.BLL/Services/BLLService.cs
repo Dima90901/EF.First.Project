@@ -13,7 +13,7 @@ namespace EF.First.Project.BLL.Services
         private readonly Model1 db = new Model1();
         public IEnumerable<Group> GetAllCars()
         {
-            return db.MyFirstCars;
+            return db.Groups;
         }
         public void AddCars ()
         {
@@ -22,7 +22,7 @@ namespace EF.First.Project.BLL.Services
                 Id = 1,
                 GroupName = "Bently"
             };
-            db.MyFirstCars.Add(cars);
+            db.Groups.Add(cars);
             db.SaveChanges();
         }
         public void Dispose ()

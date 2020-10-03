@@ -18,7 +18,11 @@ namespace EF.First.Project.DAL.Contex
         {
         }
 
-        public virtual DbSet<Group> MyFirstCars { get; set; }
+        public virtual DbSet<Group> Groups { get; set; }
+        public virtual DbSet<Audience> Audiences { get; set; }
+        public virtual DbSet<Speciality> Specialities { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Trainer> Trainers { get; set; }
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
