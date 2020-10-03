@@ -13,7 +13,7 @@ namespace EF.First.Project.PL.Console
         {
             BLLService db = new BLLService();
             db.AddCars();
-            var cars = db.GetAllCars();
+            var cars = db.GetAllGroups();
             foreach (var item in cars)
             {
                 System.Console.WriteLine(item.Id + " - " + item.GroupName);

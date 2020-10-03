@@ -11,7 +11,7 @@ namespace EF.First.Project.BLL.Services
     public class BLLService : IDisposable
     {
         private readonly Model1 db = new Model1();
-        public IEnumerable<Group> GetAllCars()
+        public IEnumerable<Group> GetAllGroups()
         {
             return db.Groups;
         }
