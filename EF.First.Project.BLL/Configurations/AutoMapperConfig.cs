@@ -14,5 +14,9 @@ namespace EF.First.Project.BLL.Configurations
             CreateMap<Student, StudentDTO>().ReverseMap();
             CreateMap<Trainer, TrainerDTO>().ReverseMap();
         }
+        public static void Initialize()
+        {
+            Mapper.Initialize(cnf => cnf.AddProfile<AutoMapperConfig>());
+        }
     }
 }

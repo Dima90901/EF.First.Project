@@ -64,6 +64,7 @@ namespace EF.First.Project.DAL.Contex
                 Name = "Roman"
             };
             context.Trainers.Add(trainer);
+            context.SaveChanges();
         }
     }
 }
