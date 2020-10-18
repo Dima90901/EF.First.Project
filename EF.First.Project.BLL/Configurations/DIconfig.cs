@@ -22,7 +22,6 @@ namespace EF.First.Project.BLL.Configurations
         public override void Load()
         {
             Bind<IUnitOfWork>().To<UnitOfWorkEF>().WithConstructorArgument(_connectionString);
-            Bind<IBLLService>().To<AudienceBLLService>().WithConstructorArgument(_connectionString);
         }
     }
 }

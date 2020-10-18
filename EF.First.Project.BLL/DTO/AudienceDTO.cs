@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EF.First.Project.BLL.DTO
 {
-    class AudienceDTO
+    public class AudienceDTO
     {
         public int Id { get; set; }
         public int? NumberAudience { get; set; }

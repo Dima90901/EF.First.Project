@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EF.First.Project.BLL.DTO
 {
-    class GroupDTO
+    public class GroupDTO
     {
         public int Id { get; set; }
         public string GroupName { get; set; }
