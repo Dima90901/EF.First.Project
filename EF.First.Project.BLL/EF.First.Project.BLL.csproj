@@ -143,7 +143,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Configurations\AutoMapperConfig.cs" />
     <Compile Include="Configurations\DIconfig.cs" />
     <Compile Include="DTO\AudienceDTO.cs" />
@@ -151,9 +150,10 @@
     <Compile Include="DTO\SpecialityDTO.cs" />
     <Compile Include="DTO\StudentDTO.cs" />
     <Compile Include="DTO\TrainerDTO.cs" />
-    <Compile Include="Interfaces\IBLLServices.cs" />
+    <Compile Include="Interfaces\IBLLService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\BLLService.cs" />
+    <Compile Include="Services\AudienceBLLService.cs" />
+    <Compile Include="Services\GroupBLLService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EF.First.Project.DAL\EF.First.Project.DAL.csproj">

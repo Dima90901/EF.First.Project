@@ -1,7 +1,7 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(EF.First.Project.BLL.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(EF.First.Project.BLL.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(WebAppWebApiPL.App_Start.NinjectWebCommon), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(WebAppWebApiPL.App_Start.NinjectWebCommon), "Stop")]
 
-namespace EF.First.Project.BLL.App_Start
+namespace WebAppWebApiPL.App_Start
 {
     using System;
     using System.Web;
